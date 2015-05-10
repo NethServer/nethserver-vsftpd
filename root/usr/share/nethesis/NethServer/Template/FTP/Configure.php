@@ -1,7 +1,7 @@
 <?php
 
 echo $view->header()->setAttribute('template', $T('FTP_Configure_header'));
-
+echo $view->textInput('port');
 echo $view->radioButton('status', 'enabled');
 echo $view->radioButton('status', 'disabled');
 

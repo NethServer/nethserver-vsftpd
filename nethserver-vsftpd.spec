@@ -1,7 +1,7 @@
 Summary: NethServer vsftpd configuration
 Name: nethserver-vsftpd
-Version: @@VERSION@@
-Release: @@RELEASE@@
+Version: 1.0.1
+Release: 2%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
 Source0: %{name}-%{version}.tar.gz
@@ -37,6 +37,9 @@ echo "%doc COPYING" >> %{name}-%{version}-filelist
 %defattr(-,root,root)
 
 %changelog
+* Sun May 10 2015 stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.1-2.ns6
+- Add an input box to change TCPPort in nethgui
+
 * Tue Jul 08 2014 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1.ns6
 - Allow chroot on home directory for system users - Enhancement #2805
 
